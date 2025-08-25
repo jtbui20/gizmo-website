@@ -13,7 +13,7 @@ const AboutScreen = () => {
             reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum."'
-          imageUrl="https://placehold.co/600x400"
+          imageUrl="/assets/gizmo_pepega.png"
         />
         <KeyContent
           description='            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

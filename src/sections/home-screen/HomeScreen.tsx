@@ -4,10 +4,7 @@ const HomeScreen = () => {
       <div className="screen-content full">
         <div id="video-frame">
           <video autoPlay loop muted>
-            <source
-              src="public/assets/2025-08-25 12-20-55.webm"
-              type="video/webm"
-            />
+            <source src="/assets/2025-08-25 12-20-55.webm" type="video/webm" />
           </video>
         </div>
         <div

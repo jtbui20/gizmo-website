@@ -10,14 +10,14 @@ const RobotsContent: Array<SectionContentBindings> = [
     spriteURL: "https://placehold.co/128x128",
     description:
       "This is a description for Robot 1. It has unique features and abilities that make it stand out in the game.",
-    videoURL: "https://placehold.co/600x400?text=Robot+1+Video",
+    videoURL: "/assets/luggers.png",
   },
   {
     name: "Robot 2",
     spriteURL: "https://placehold.co/128x128",
     description:
       "This is a description for Robot 2. It has unique features and abilities that make it stand out in the game.",
-    videoURL: "https://placehold.co/600x400?text=Robot+2+Video",
+    videoURL: "/assets/turrets.png",
   },
   {
     name: "Robot 3",
