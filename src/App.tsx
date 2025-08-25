@@ -1,4 +1,5 @@
 import "./App.css";
+import FullScreenMedia from "./components/FullScreenMedia/FullScreenMedia";
 import "./css/reso.css";
 import {
   AboutScreen,
@@ -12,6 +13,7 @@ import {
 function App() {
   return (
     <>
+      {/* <FullScreenMedia type="video" url="sample-video.mp4" /> */}
       <HomeScreen />
       <div className="screen-containers">
         <AboutScreen />

@@ -17,17 +17,21 @@ type MediaSectionProps = {
 const MediaContext = (props: MediaSectionProps) => {
   return (
     <div className="media-context">
-      <MediaTypeSection type="Screenshots" list={props.screenshots} />
+      <MediaTypeSection
+        type="Screenshots"
+        list={props.screenshots}
+        hideCaption={true}
+      />
       <MediaTypeSection type="Videos" list={props.videos} />
     </div>
   );
 };
 
-const MediaCard = (props: MediaContent) => {
+const MediaCard = (props: { item: MediaContent; hideCaptions: boolean }) => {
   return (
     <div className="media-card">
-      <img src={props.imageSmall} alt={props.name} />
-      <p>{props.name}</p>
+      <img src={props.item.imageSmall} alt={props.item.name} />
+      {!props.hideCaptions && <p>{props.item.name}</p>}
     </div>
   );
 };
@@ -35,13 +39,18 @@ const MediaCard = (props: MediaContent) => {
 const MediaTypeSection = (props: {
   type: string;
   list: Array<MediaContent>;
+  hideCaption?: boolean;
 }) => {
   return (
     <div className="media-category-section">
       <h2>{props.type}</h2>
       <ul>
         {props.list.map((item, index) => (
-          <MediaCard key={index} {...item} />
+          <MediaCard
+            key={index}
+            item={item}
+            hideCaptions={props.hideCaption || false}
+          />
         ))}
       </ul>
     </div>
