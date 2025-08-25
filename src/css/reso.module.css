@@ -1,3 +1,11 @@
+#home-content {
+  display: "flex";
+  padding: "0 40px";
+  flexdirection: "column";
+  alignitems: "flex-start";
+  flexshrink: 0;
+}
+
 .selection-context {
   display: flex;
   padding: 10px;

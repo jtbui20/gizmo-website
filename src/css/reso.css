@@ -56,7 +56,7 @@ p {
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
-  background-color: #efefef;
+  background-color: #00000000;
 }
 
 .screen-content-body {
@@ -99,12 +99,26 @@ p {
 
 // --------------------------------------------------Home Section
 #home-content {
-  // This isn't applying for some reason
-  display: flex;
-  padding: 0 40px;
-  flex-direction: column;
-  align-items: flex-start;
-  flex-shrink: 0;
+  display: "flex";
+  padding: "0 40px";
+  flexdirection: "column";
+  alignitems: "flex-start";
+  flexshrink: 0;
+}
+
+#video-frame {
+  position: absolute;
+  background: #1b1d1f;
+  width: 100%;
+  height: 100%;
+
+  z-index: -1;
+}
+#video-frame video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
 }
 
 #home-header {
