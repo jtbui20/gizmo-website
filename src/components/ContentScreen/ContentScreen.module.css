@@ -1,0 +1,34 @@
+.screenContainers {
+  display: flex;
+  flex-direction: column;
+  background-color: #9f9f9f;
+  width: 100%;
+  gap: 10px;
+}
+
+.screenContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--bg-lv3);
+  padding: 20px;
+}
+
+.screenContent h1 {
+  align-items: center;
+}
+
+.full {
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  justify-content: flex-end;
+  align-items: flex-start;
+  background-color: transparent;
+}
+
+@media only screen and (min-width: 768px) {
+  .full {
+    height: 85dvh;
+  }
+}

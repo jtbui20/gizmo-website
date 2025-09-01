@@ -1,0 +1,22 @@
+.selectionContext {
+  display: flex;
+  flex-direction: column;
+}
+
+.selectionContext ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  list-style: none;
+  gap: 20px;
+}
+
+.selectionItem {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  text-align: center;
+  align-items: center;
+}

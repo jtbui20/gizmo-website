@@ -1,24 +1,36 @@
-type FullScreenMediaProps = {
-  type: "video" | "screenshot";
-  url: string;
-};
+import styles from "./FullScreenMedia.module.css";
+import {
+  MediaContextA,
+  MediaProviderContext,
+} from "../../providers/MediaProvider";
+import { useContext } from "react";
 
-const FullScreenMedia = (props: FullScreenMediaProps) => {
+const FullScreenMediaDisplay = () => {
+  const media = useContext(MediaContextA);
+  const dispatch = useContext(MediaProviderContext);
+  const onClick = () => {
+    // @ts-expect-error - typing
+    dispatch({ type: "hide", payload: { type: "", url: "" } });
+  };
   return (
-    <div id="fullscreen-media">
-      <div>
-        <button>Close</button>
-      </div>
-      {props.type === "video" ? (
-        <video controls autoPlay>
-          <source src={props.url} type="video/mp4" />
-          Your browser does not support the video tag
-        </video>
-      ) : (
-        <img src={props.url} alt="Full Screen Media" />
+    <>
+      {media.show && (
+        <div id={styles.fullscreenMedia}>
+          <div>
+            <button onClick={onClick}>Close</button>
+          </div>
+          {media.type === "video" ? (
+            <video controls autoPlay>
+              <source src={media.url} type="video/mp4" />
+              Your browser does not support the video tag
+            </video>
+          ) : (
+            <img src={media.url} alt="Full Screen Media" />
+          )}
+        </div>
       )}
-    </div>
+    </>
   );
 };
 
-export default FullScreenMedia;
+export default FullScreenMediaDisplay;

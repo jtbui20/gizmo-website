@@ -1,0 +1,21 @@
+.keyContentFrame {
+  display: flex;
+}
+
+.key-horizontal {
+  flex-direction: row;
+}
+
+.key-vertical {
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 768px) {
+  .keyContentFrame {
+    align-items: center;
+  }
+
+  .key-horizontal {
+    flex-direction: column;
+  }
+}

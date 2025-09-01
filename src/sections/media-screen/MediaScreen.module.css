@@ -1,0 +1,36 @@
+.mediaCard {
+  display: flex;
+  flex-direction: column;
+}
+
+.mediaCategorySection ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .mediaCategorySection ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .media-card {
+    width: 150px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .mediaCategorySection ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .media-card {
+    width: 200px;
+  }
+}

@@ -1,14 +1,17 @@
+import "./ContactFooter.module.css";
+
 const ContactFooter = () => {
   return (
-    <div className="footer">
+    <footer>
       <form>
-        <h1>Contact Details</h1>
+        <h2>Contact Details</h2>
         <input type="text" placeholder="Name" />
         <input type="email" placeholder="Email" />
         <textarea placeholder="Message" />
         <button type="submit">Send</button>
       </form>
-      <div>
+      <br />
+      <div id="social-media">
         <ul>
           <li>Twitter / X</li>
           <li>BlueSky</li>
@@ -16,7 +19,12 @@ const ContactFooter = () => {
           <li>Instagram</li>
         </ul>
       </div>
-    </div>
+      <br />
+      <div>
+        <p>Disclaimers</p>
+        <p>© 2024 Gizmo. All rights reserved.</p>
+      </div>
+    </footer>
   );
 };
 

@@ -1,6 +1,3 @@
-import "./App.css";
-import FullScreenMedia from "./components/FullScreenMedia/FullScreenMedia";
-import "./css/reso.css";
 import {
   AboutScreen,
   ContactFooter,
@@ -8,20 +5,26 @@ import {
   HomeScreen,
   MediaScreen,
   TeamInfo,
+  GameSpecifications,
 } from "./sections";
+
+import styles from "./components/ContentScreen/ContentScreen.module.css";
+import { MediaProvider } from "./providers/MediaProvider";
 
 function App() {
   return (
     <>
-      {/* <FullScreenMedia type="video" url="sample-video.mp4" /> */}
-      <HomeScreen />
-      <div className="screen-containers">
-        <AboutScreen />
-        <GameplayScreen />
-        <MediaScreen />
-        <TeamInfo />
-      </div>
-      <ContactFooter />
+      <MediaProvider>
+        <HomeScreen />
+        <div className={styles.screenContainers}>
+          <AboutScreen />
+          <GameplayScreen />
+          <MediaScreen />
+          <TeamInfo />
+          <GameSpecifications />
+        </div>
+        <ContactFooter />
+      </MediaProvider>
     </>
   );
 }

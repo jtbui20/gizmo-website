@@ -1,16 +1,51 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Jost, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
+  --bg: #030303a6;
+  --bg-text: #f3f3f3;
+  --bg-lv2: #9f9f9f;
+  --bg-lv3: #eeeeee;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: var(--bg);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#root {
+  /* background: url("assets/industrial_grip_tex.jpg"); */
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  img {
+    max-width: 75dvw;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  :root {
+    font-size: 1.5rem;
+  }
 }
 
 a {

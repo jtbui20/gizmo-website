@@ -1,5 +1,7 @@
+import { useContext } from "react";
 import { ContentScreenContainer } from "../../components";
-
+import styles from "./MediaScreen.module.css";
+import { MediaProviderContext } from "../../providers/MediaProvider";
 // The content will create a fullscreen container for the selected media
 
 type MediaContent = {
@@ -28,8 +30,17 @@ const MediaContext = (props: MediaSectionProps) => {
 };
 
 const MediaCard = (props: { item: MediaContent; hideCaptions: boolean }) => {
+  const dispatch = useContext(MediaProviderContext);
+  const onClick = () => {
+    // @ts-expect-error -typing
+    dispatch({
+      type: "show",
+      payload: { type: props.item.type, url: props.item.url },
+    });
+  };
+
   return (
-    <div className="media-card">
+    <div className={styles.mediaCard} onClick={onClick}>
       <img src={props.item.imageSmall} alt={props.item.name} />
       {!props.hideCaptions && <p>{props.item.name}</p>}
     </div>
@@ -42,7 +53,7 @@ const MediaTypeSection = (props: {
   hideCaption?: boolean;
 }) => {
   return (
-    <div className="media-category-section">
+    <div className={styles.mediaCategorySection}>
       <h2>{props.type}</h2>
       <ul>
         {props.list.map((item, index) => (
@@ -104,7 +115,7 @@ const MediaScreen = () => {
   };
 
   return (
-    <ContentScreenContainer title="Media">
+    <ContentScreenContainer title="Media" id="media">
       <MediaContext {...data} />
     </ContentScreenContainer>
   );

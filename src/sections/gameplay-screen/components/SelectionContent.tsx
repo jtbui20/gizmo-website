@@ -1,5 +1,5 @@
 import KeyContent from "../../../components/KeyContent/KeyContent";
-import styles from "../../../css/reso.module.css";
+import styles from "./SelectionContext.module.css";
 
 type SectionContentBindings = {
   name: string;
@@ -9,7 +9,7 @@ type SectionContentBindings = {
 };
 const SelectionItem = (props: { name: string; spriteURL: string }) => {
   return (
-    <li>
+    <li className={styles.selectionItem}>
       <img src={props.spriteURL} alt={props.name} />
       <p>{props.name}</p>
     </li>
@@ -21,7 +21,7 @@ const SelectionContext = (props: {
 }) => {
   const selected = props.content[0];
   return (
-    <div className={styles["selection-context"]}>
+    <div className={styles.selectionContext}>
       <ul>
         {props.content.map((data) => {
           return (
@@ -34,7 +34,7 @@ const SelectionContext = (props: {
         })}
       </ul>
       <KeyContent
-        direction="vertical"
+        direction="key-vertical"
         description={selected.description}
         imageUrl={selected.videoURL}
       />

@@ -1,13 +1,16 @@
+import styles from "./ContentScreen.module.css";
+
 type ContentScreenProps = {
   title: string;
   children: React.ReactNode;
+  id: string;
 };
 
 const ContentScreen = (props: ContentScreenProps) => {
   return (
-    <section className="screen-content">
+    <section className={styles.screenContent} id={props.id}>
       <h1>{props.title}</h1>
-      <div className="screen-content-body">{props.children}</div>
+      <div>{props.children}</div>
     </section>
   );
 };
