@@ -29,11 +29,7 @@ const HomeScreen = () => {
       <BackgroundVideo src="assets/bg-reel.webm" />
       <div id={styles.homeContent}>
         <div id={styles.homeHeader}>
-          <img
-            src="https://placehold.co/460x200?text=460+x+200\nLogo"
-            alt="Logo"
-          />
-          <p className={styles.subtitle}>Catch Phrase to draw audience in</p>
+          <img src="assets/gizmo_logo.png" alt="Logo" />
         </div>
 
         <DownloadFooter />
