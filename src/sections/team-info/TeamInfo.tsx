@@ -59,7 +59,7 @@ const people = [
   },
 ];
 
-const layoutConfig = [2, 5, 3];
+// const layoutConfig = [2, 5, 3];
 
 const TeamInfo = () => {
   return (
