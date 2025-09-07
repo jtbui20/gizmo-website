@@ -12,7 +12,7 @@ import type {
 import FullScreenMediaDisplay from "../components/FullScreenMedia/FullScreenMedia";
 
 const defaultState: FullScreenMediaType = {
-  show: true,
+  show: false,
   type: "video",
   url: "",
 };
