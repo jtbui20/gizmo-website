@@ -1,0 +1,11 @@
+.imageRowContent {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+}
+
+.imageRowContent img {
+  flex-shrink: 2;
+  width: 300px;
+}

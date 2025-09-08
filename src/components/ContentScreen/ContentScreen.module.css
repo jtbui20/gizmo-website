@@ -3,7 +3,8 @@
   flex-direction: column;
   background-color: #9f9f9f;
   width: 100%;
-  gap: 10px;
+  gap: var(--space-md);
+    background: url("assets/gizmo_icon.svg") repeat 5% / 5%;
 }
 
 .screenContent {
@@ -12,6 +13,8 @@
   align-items: center;
   background-color: var(--bg-lv3);
   padding: var(--space-md);
+  border: 5px solid black;
+  box-shadow: 0 0 10px white;
 }
 
 .screenContent h1 {
@@ -25,10 +28,21 @@
   justify-content: flex-end;
   align-items: flex-start;
   background-color: transparent;
+  border: none;
+  box-shadow: none;
 }
 
 @media only screen and (min-width: 768px) {
   .full {
     height: 85dvh;
+  }
+
+  .screenContainers {
+    padding-top: var(--space-lg);
+    align-items: center;
+  }
+
+  .screenContent {
+    width: 80%;
   }
 }

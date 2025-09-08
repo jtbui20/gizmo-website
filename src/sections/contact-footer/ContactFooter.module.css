@@ -4,7 +4,6 @@ footer {
   width: -webkit-fill-available;
   padding: var(--space-md) var(--space-lg);
   align-items: center;
-  gap: var(--space-md);
   color: white;
   margin: 50px 0 0 0;
   background: #3f3f3f;
@@ -42,10 +41,27 @@ footer textarea {
   height: 300px;
 }
 
-@media only screen and (min-width: 1280px) {
+footer h2 {
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  footer {
+    justify-content: space-between;
+    text-align: left;
+  }
+
   footer ul {
     width: auto;
+    flex-direction: row;
   }
+
+  footer form {
+    width: 800px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
 
   footer form {
     width: 50%;

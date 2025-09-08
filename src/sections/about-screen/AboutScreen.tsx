@@ -1,4 +1,5 @@
 import { ContentScreenContainer } from "../../components";
+import ImageRowContent from "../../components/ImageRowContent/ImageRowContent";
 import KeyContent from "../../components/KeyContent/KeyContent";
 import styles from "./AboutScreen.module.css";
 
@@ -15,6 +16,13 @@ const AboutScreen = () => {
           imageUrl="https://placehold.co/600x400"
         />
       </div>
+      <ImageRowContent
+        assets={[
+          "https://placehold.co/600x400",
+          "https://placehold.co/600x400",
+          "https://placehold.co/600x400",
+        ]}
+      />
     </ContentScreenContainer>
   );
 };

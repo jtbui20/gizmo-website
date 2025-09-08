@@ -1,16 +1,16 @@
 .selectionContext {
   display: flex;
   flex-direction: column;
+  gap: var(--space-md);
 }
 
 .selectionContext ul {
   display: flex;
   flex-direction: column;
   padding: 0px;
-  overflow-x: auto;
-  overflow-y: hidden;
   list-style: none;
   gap: var(--space-md);
+  width: 100%;
 }
 
 .selectionItem {
@@ -39,11 +39,8 @@
   .selectionContext {
     display: flex;
     padding: 10px;
-    align-items: center;
-    gap: var(--space-md);
-    flex: 1 0 0;
+    gap: var(--space-lg);
     flex-direction: row;
-    align-self: stretch;
   }
 
   .selectionContext ul {
@@ -51,11 +48,18 @@
     padding: 10px;
     flex-direction: column;
     align-items: flex-start;
-    gap: 22px;
-    width: auto;
+  }
+
+  .selectionItem p {
+    display: inline;
+    width: 100%;
   }
 
   .selectionContext .keyContentFrame {
     width: 70%;
+  }
+
+  .selectionContext .keyContentFram {
+    flex-shrink: 10;
   }
 }

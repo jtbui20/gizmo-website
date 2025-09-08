@@ -4,8 +4,7 @@
 }
 
 .keyContentFrame img {
-  width: 256px;
-  height: auto;
+  max-width: 50dvw;
   border: 1px solid black;
 }
 
@@ -24,5 +23,15 @@
 
   .key-horizontal {
     flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .keyContentFrame img {
+    max-width: 25dvw;
+  }
+
+  .key-vertical {
+    flex-direction: row;
   }
 }

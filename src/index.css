@@ -30,7 +30,6 @@ body {
 }
 
 #root {
-  /* background: url("assets/industrial_grip_tex.jpg"); */
   text-align: left;
   margin: 0;
   padding: 0;
@@ -48,7 +47,7 @@ body {
 
 @media only screen and (min-width: 1280px) {
   :root {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 

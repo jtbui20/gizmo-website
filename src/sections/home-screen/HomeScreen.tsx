@@ -14,11 +14,19 @@ const BackgroundVideo = (props: { src: string }) => {
 const DownloadFooter = () => {
   return (
     <div id={styles.homeFooterList}>
-      <img
-        className={styles.badge}
-        src="assets/itchio-badge.svg"
-        alt="Try on itch.io"
-      />
+      <a
+        href="https://team-gizmo.itch.io/gizmo"
+        target="_blank"
+        rel="noreferrer"
+        aria-label="Try on itch.io"
+      >
+        <img
+          className={styles.badge}
+          src="assets/itchio-badge.svg"
+          alt="Try on itch.io"
+          aria-label="Try on itch.io"
+        />
+      </a>
     </div>
   );
 };

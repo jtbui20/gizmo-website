@@ -23,6 +23,7 @@
 
 #team img {
   width: 128px;
+  border-radius: 100px;
 }
 
 .individual-person {

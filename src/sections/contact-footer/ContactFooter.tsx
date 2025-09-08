@@ -5,9 +5,28 @@ const ContactFooter = () => {
     <footer>
       <form>
         <h2>Contact Details</h2>
-        <input type="text" placeholder="Name" />
-        <input type="email" placeholder="Email" />
-        <textarea placeholder="Message" />
+        <p>
+          You can contact us at our address{" "}
+          <a href="mailto:support@gizmo-game.com">support@gizmo-game.com</a> or
+          use the form below
+        </p>
+        <input
+          name="contact-name"
+          id="contact-name"
+          type="text"
+          placeholder="Name"
+        />
+        <input
+          name="contact-email"
+          id="contact-email"
+          type="email"
+          placeholder="Email"
+        />
+        <textarea
+          name="contact-message"
+          id="contact-message"
+          placeholder="Message"
+        />
         <button type="submit">Send</button>
       </form>
       <br />
