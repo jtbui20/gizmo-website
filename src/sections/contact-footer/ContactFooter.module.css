@@ -2,9 +2,9 @@ footer {
   display: flex;
   flex-direction: column;
   width: -webkit-fill-available;
-  padding: 20px 40px;
+  padding: var(--space-md) var(--space-lg);
   align-items: center;
-  gap: 20px;
+  gap: var(--space-md);
   color: white;
   margin: 50px 0 0 0;
   background: #3f3f3f;
@@ -14,7 +14,7 @@ footer {
 footer ul {
   list-style-type: none;
   flex-direction: column;
-  gap: 20px;
+  gap: var(--space-md);
   padding: 0;
   display: flex;
   width: 400px;
@@ -30,7 +30,7 @@ footer li {
 footer form {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: var(--space-md);
   width: 200px;
 }
 

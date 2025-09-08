@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: flex-start;
   flex-shrink: 0;
-  padding: 40px;
+  padding: var(--space-md);
   justify-content: flex-end;
   align-items: flex-start;
   background-color: transparent;
@@ -44,7 +44,7 @@
 
 #homeContent {
   display: flex;
-  padding: 0 40px;
+  padding: 0 var(--space-md);
   flex-direction: column;
   align-items: flex-start;
   flex-shrink: 0;
@@ -52,7 +52,7 @@
 
 #homeFooterList {
   display: flex;
-  padding: 40px 10px;
+  padding: var(--space-md) var(--space-sm);
   justify-content: center;
   align-items: center;
   gap: 30px;

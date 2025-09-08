@@ -6,7 +6,7 @@
 .mediaCategorySection ul {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: var(--space-md);
   padding: 0;
   margin: 0;
 }
@@ -27,7 +27,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 40px;
+    gap: var(--space-lg);
   }
 
   .media-card {

@@ -31,7 +31,6 @@ const HomeScreen = () => {
         <div id={styles.homeHeader}>
           <img src="assets/gizmo_logo.png" alt="Logo" />
         </div>
-
         <DownloadFooter />
       </div>
     </div>

@@ -11,6 +11,10 @@
   color: rgba(255, 255, 255, 0.87);
   background-color: var(--bg);
 
+  --space-sm: 10px;
+  --space-md: 20px;
+  --space-lg: 40px;
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

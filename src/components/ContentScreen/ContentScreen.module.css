@@ -11,7 +11,7 @@
   flex-direction: column;
   align-items: center;
   background-color: var(--bg-lv3);
-  padding: 20px;
+  padding: var(--space-md);
 }
 
 .screenContent h1 {

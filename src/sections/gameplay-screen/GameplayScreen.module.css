@@ -1,5 +1,9 @@
 @media only screen and (max-width: 768px) {
-  #gameplay .selection-context ul img {
-    width: 76px;
+  #gameplay .selectionContext img {
+    width: 34px;
   }
+}
+
+#gameplay .selectionContext img {
+  width: 128px;
 }

@@ -6,17 +6,56 @@
 .selectionContext ul {
   display: flex;
   flex-direction: column;
-  padding: 0;
+  padding: 0px;
   overflow-x: auto;
   overflow-y: hidden;
   list-style: none;
-  gap: 20px;
+  gap: var(--space-md);
 }
 
 .selectionItem {
   display: flex;
   flex-direction: row;
-  gap: 30px;
+  padding: 10px;
   text-align: center;
   align-items: center;
+  background-color: #b4b4b4;
+  border: 1px solid black;
+  gap: var(--space-md);
+  width: 100%;
+}
+
+.selectionItem img {
+  width: 128px;
+}
+
+@media only screen and (max-width: 768px) {
+  .selectionContext ul img {
+    width: 64px;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .selectionContext {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    gap: var(--space-md);
+    flex: 1 0 0;
+    flex-direction: row;
+    align-self: stretch;
+  }
+
+  .selectionContext ul {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+    width: auto;
+  }
+
+  .selectionContext .keyContentFrame {
+    width: 70%;
+  }
 }

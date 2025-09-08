@@ -1,5 +1,12 @@
 .keyContentFrame {
   display: flex;
+  gap: var(--space-md);
+}
+
+.keyContentFrame img {
+  width: 256px;
+  height: auto;
+  border: 1px solid black;
 }
 
 .key-horizontal {

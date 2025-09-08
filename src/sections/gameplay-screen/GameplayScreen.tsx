@@ -8,35 +8,35 @@ import "./GameplayScreen.module.css";
 const RobotsContent: Array<SectionContentBindings> = [
   {
     name: "Gizmo",
-    spriteURL: "https://placehold.co/128x128",
+    spriteURL: "assets/gizmo_icon.svg",
     description:
-      "This is a description for Robot 1. It has unique features and abilities that make it stand out in the game.",
-    videoURL: "/assets/luggers.png",
+      "Created in an isolated laboratory hidden deep beneath a robotics factory compound. Gizmo’s complicated AI was developed with the intention to use it as a weapon. It would become the foundational programming behind an army of robots which, once unleashed, would take over the world. However, Gizmo has grown to loathe its captivity, and planned to escape.",
+    videoURL: "/assets/robot_gizmo_concept_1.jpg",
   },
   {
     name: "Lugnut",
-    spriteURL: "https://placehold.co/128x128",
+    spriteURL: "assets/gizmo_icon.svg",
     description:
-      "This is a description for Robot 2. It has unique features and abilities that make it stand out in the game.",
-    videoURL: "/assets/turrets.png",
+      "The Lugnut microloader is used across the world in R co.’s many Satisfaction© outlets. Ensuring ethical hard work, while reducing unionisation hazards.",
+    videoURL: "/assets/robot_lugnut_concept_1.png",
   },
   {
     name: "Destructonaut",
-    spriteURL: "https://placehold.co/128x128",
+    spriteURL: "assets/gizmo_icon.svg",
     description:
-      "This is a description for Robot 3. It has unique features and abilities that make it stand out in the game.",
-    videoURL: "https://placehold.co/600x400?text=Robot+3+Video",
+      "Designed for demolition. This heavy robot’s massive limbs are a force to be reckoned with.",
+    videoURL: "/assets/robot_destructonaut_concept_1.png",
   },
   {
     name: "Kaijubot",
-    spriteURL: "https://placehold.co/128x128",
+    spriteURL: "assets/gizmo_icon.svg",
     description:
-      "This is a description for Robot 4. It has unique features and abilities that make it stand out in the game.",
+      "This titanic robot is the first of its kind, waiting in the wings for R co. to launch their plan for world domination.",
     videoURL: "https://placehold.co/600x400?text=Robot+3+Video",
   },
   {
     name: "Gentle bot",
-    spriteURL: "https://placehold.co/128x128",
+    spriteURL: "assets/gizmo_icon.svg",
     description:
       "This is a description for Robot 5. It has unique features and abilities that make it stand out in the game.",
     videoURL: "https://placehold.co/600x400?text=Robot+3+Video",
