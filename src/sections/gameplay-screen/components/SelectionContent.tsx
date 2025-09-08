@@ -1,3 +1,4 @@
+import { useState } from "react";
 import KeyContent from "../../../components/KeyContent/KeyContent";
 import styles from "./SelectionContext.module.css";
 
@@ -7,9 +8,14 @@ type SectionContentBindings = {
   description: string;
   videoURL: string;
 };
-const SelectionItem = (props: { name: string; spriteURL: string }) => {
+
+const SelectionItem = (props: {
+  name: string;
+  spriteURL: string;
+  onClick: () => void;
+}) => {
   return (
-    <li className={styles.selectionItem}>
+    <li className={styles.selectionItem} onClick={props.onClick}>
       <img src={props.spriteURL} alt={props.name} />
       <p>{props.name}</p>
     </li>
@@ -19,16 +25,18 @@ const SelectionItem = (props: { name: string; spriteURL: string }) => {
 const SelectionContext = (props: {
   content: Array<SectionContentBindings>;
 }) => {
-  const selected = props.content[0];
+  const [selected, setSelected] = useState(props.content[0]);
+
   return (
     <div className={styles.selectionContext}>
       <ul>
-        {props.content.map((data) => {
+        {props.content.map((data, index) => {
           return (
             <SelectionItem
               key={data.name}
               name={data.name}
               spriteURL={data.spriteURL}
+              onClick={() => setSelected(props.content[index])}
             />
           );
         })}
